@@ -8,20 +8,64 @@
 
 /* Begin PBXBuildFile section */
 		0C759474215FF02500D5DA38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C759473215FF02500D5DA38 /* AppDelegate.swift */; };
-		0C759476215FF02500D5DA38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C759475215FF02500D5DA38 /* ViewController.swift */; };
-		0C759479215FF02500D5DA38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C759477215FF02500D5DA38 /* Main.storyboard */; };
 		0C75947B215FF02700D5DA38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C75947A215FF02700D5DA38 /* Assets.xcassets */; };
 		0C75947E215FF02700D5DA38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C75947C215FF02700D5DA38 /* LaunchScreen.storyboard */; };
+		0C759487215FF28000D5DA38 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C759486215FF28000D5DA38 /* RootViewController.swift */; };
+		0C75948A215FF51200D5DA38 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C759489215FF51200D5DA38 /* AppCoordinator.swift */; };
+		0C75948E21600D5700D5DA38 /* PersonalTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C75948C21600D5700D5DA38 /* PersonalTimelineViewController.swift */; };
+		0C75948F21600D5700D5DA38 /* PersonalTimelineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C75948D21600D5700D5DA38 /* PersonalTimelineViewController.xib */; };
+		0C75949221600E0500D5DA38 /* SocialTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C75949021600E0500D5DA38 /* SocialTimelineViewController.swift */; };
+		0C75949321600E0500D5DA38 /* SocialTimelineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C75949121600E0500D5DA38 /* SocialTimelineViewController.xib */; };
+		0C75949621600E3B00D5DA38 /* ExploreEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C75949421600E3B00D5DA38 /* ExploreEventsViewController.swift */; };
+		0C75949721600E3B00D5DA38 /* ExploreEventsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C75949521600E3B00D5DA38 /* ExploreEventsViewController.xib */; };
+		0C75949A21600E6B00D5DA38 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C75949821600E6B00D5DA38 /* ProfileViewController.swift */; };
+		0C75949B21600E6B00D5DA38 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C75949921600E6B00D5DA38 /* ProfileViewController.xib */; };
+		0C75949D216011F200D5DA38 /* PersonalTimelineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C75949C216011F200D5DA38 /* PersonalTimelineViewModel.swift */; };
+		0C75949F2160121E00D5DA38 /* SocialTimelineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C75949E2160121E00D5DA38 /* SocialTimelineViewModel.swift */; };
+		0C7594A12160123600D5DA38 /* ExploreEventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7594A02160123600D5DA38 /* ExploreEventsViewModel.swift */; };
+		0C7594A32160124200D5DA38 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7594A22160124200D5DA38 /* ProfileViewModel.swift */; };
+		0C7594A92160228D00D5DA38 /* PersonalTimelineCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7594A82160228D00D5DA38 /* PersonalTimelineCoordinator.swift */; };
+		0C7594AB216022BA00D5DA38 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7594AA216022BA00D5DA38 /* Coordinator.swift */; };
+		0CA1330F21607A8400D02020 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1330E21607A8400D02020 /* TabBarCoordinator.swift */; };
+		0CA1331221614AE000D02020 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA1331021614AE000D02020 /* TabBarController.swift */; };
+		0CA1331321614AE000D02020 /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA1331121614AE000D02020 /* TabBarController.xib */; };
+		0CA133162161546A00D02020 /* SocialTimelineCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA133152161546A00D02020 /* SocialTimelineCoordinator.swift */; };
+		0CA13318216427A200D02020 /* ExploreEventsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA13317216427A200D02020 /* ExploreEventsCoordinator.swift */; };
+		0CA1331A2164281A00D02020 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA133192164281A00D02020 /* ProfileCoordinator.swift */; };
+		DE7B69C2F7D495AB41423B3F /* Pods_stagetime_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DE1C0C406D77F31BA16A24 /* Pods_stagetime_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0920EDFE2FB08E97B4E53FF2 /* Pods-stagetime-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stagetime-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-stagetime-ios/Pods-stagetime-ios.release.xcconfig"; sourceTree = "<group>"; };
 		0C759470215FF02500D5DA38 /* stagetime-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stagetime-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C759473215FF02500D5DA38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0C759475215FF02500D5DA38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0C759478215FF02500D5DA38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C75947A215FF02700D5DA38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C75947D215FF02700D5DA38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C75947F215FF02700D5DA38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C759486215FF28000D5DA38 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		0C759489215FF51200D5DA38 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		0C75948C21600D5700D5DA38 /* PersonalTimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTimelineViewController.swift; sourceTree = "<group>"; };
+		0C75948D21600D5700D5DA38 /* PersonalTimelineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalTimelineViewController.xib; sourceTree = "<group>"; };
+		0C75949021600E0500D5DA38 /* SocialTimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialTimelineViewController.swift; sourceTree = "<group>"; };
+		0C75949121600E0500D5DA38 /* SocialTimelineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialTimelineViewController.xib; sourceTree = "<group>"; };
+		0C75949421600E3B00D5DA38 /* ExploreEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreEventsViewController.swift; sourceTree = "<group>"; };
+		0C75949521600E3B00D5DA38 /* ExploreEventsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreEventsViewController.xib; sourceTree = "<group>"; };
+		0C75949821600E6B00D5DA38 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0C75949921600E6B00D5DA38 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		0C75949C216011F200D5DA38 /* PersonalTimelineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTimelineViewModel.swift; sourceTree = "<group>"; };
+		0C75949E2160121E00D5DA38 /* SocialTimelineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialTimelineViewModel.swift; sourceTree = "<group>"; };
+		0C7594A02160123600D5DA38 /* ExploreEventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreEventsViewModel.swift; sourceTree = "<group>"; };
+		0C7594A22160124200D5DA38 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		0C7594A82160228D00D5DA38 /* PersonalTimelineCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTimelineCoordinator.swift; sourceTree = "<group>"; };
+		0C7594AA216022BA00D5DA38 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		0CA1330E21607A8400D02020 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		0CA1331021614AE000D02020 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		0CA1331121614AE000D02020 /* TabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarController.xib; sourceTree = "<group>"; };
+		0CA133152161546A00D02020 /* SocialTimelineCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialTimelineCoordinator.swift; sourceTree = "<group>"; };
+		0CA13317216427A200D02020 /* ExploreEventsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreEventsCoordinator.swift; sourceTree = "<group>"; };
+		0CA133192164281A00D02020 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		B0DE1C0C406D77F31BA16A24 /* Pods_stagetime_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stagetime_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C60AA3599E0DD16B199C3FC4 /* Pods-stagetime-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stagetime-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stagetime-ios/Pods-stagetime-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7B69C2F7D495AB41423B3F /* Pods_stagetime_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +85,8 @@
 			children = (
 				0C759472215FF02500D5DA38 /* stagetime-ios */,
 				0C759471215FF02500D5DA38 /* Products */,
+				2473FC926BA0A18958BF2B38 /* Pods */,
+				B7C6B98A7EA25697FE0FDDD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +101,115 @@
 		0C759472215FF02500D5DA38 /* stagetime-ios */ = {
 			isa = PBXGroup;
 			children = (
+				0C759488215FF4DD00D5DA38 /* Coordinators */,
+				0C75948B216008FF00D5DA38 /* ViewControllers */,
+				0C759485215FF24400D5DA38 /* Supporting */,
+			);
+			path = "stagetime-ios";
+			sourceTree = "<group>";
+		};
+		0C759485215FF24400D5DA38 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
 				0C759473215FF02500D5DA38 /* AppDelegate.swift */,
-				0C759475215FF02500D5DA38 /* ViewController.swift */,
-				0C759477215FF02500D5DA38 /* Main.storyboard */,
 				0C75947A215FF02700D5DA38 /* Assets.xcassets */,
 				0C75947C215FF02700D5DA38 /* LaunchScreen.storyboard */,
 				0C75947F215FF02700D5DA38 /* Info.plist */,
+				0C759486215FF28000D5DA38 /* RootViewController.swift */,
 			);
-			path = "stagetime-ios";
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		0C759488215FF4DD00D5DA38 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				0C7594AA216022BA00D5DA38 /* Coordinator.swift */,
+				0C759489215FF51200D5DA38 /* AppCoordinator.swift */,
+				0CA1330E21607A8400D02020 /* TabBarCoordinator.swift */,
+				0C7594A82160228D00D5DA38 /* PersonalTimelineCoordinator.swift */,
+				0CA133152161546A00D02020 /* SocialTimelineCoordinator.swift */,
+				0CA13317216427A200D02020 /* ExploreEventsCoordinator.swift */,
+				0CA133192164281A00D02020 /* ProfileCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		0C75948B216008FF00D5DA38 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0CA1331421614AED00D02020 /* Tab Bar */,
+				0C7594A42160151A00D5DA38 /* Personal Timeline */,
+				0C7594A52160152F00D5DA38 /* Social Timeline */,
+				0C7594A62160153A00D5DA38 /* Explore Events */,
+				0C7594A72160154E00D5DA38 /* Profile */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0C7594A42160151A00D5DA38 /* Personal Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				0C75948C21600D5700D5DA38 /* PersonalTimelineViewController.swift */,
+				0C75949C216011F200D5DA38 /* PersonalTimelineViewModel.swift */,
+				0C75948D21600D5700D5DA38 /* PersonalTimelineViewController.xib */,
+			);
+			path = "Personal Timeline";
+			sourceTree = "<group>";
+		};
+		0C7594A52160152F00D5DA38 /* Social Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				0C75949021600E0500D5DA38 /* SocialTimelineViewController.swift */,
+				0C75949E2160121E00D5DA38 /* SocialTimelineViewModel.swift */,
+				0C75949121600E0500D5DA38 /* SocialTimelineViewController.xib */,
+			);
+			path = "Social Timeline";
+			sourceTree = "<group>";
+		};
+		0C7594A62160153A00D5DA38 /* Explore Events */ = {
+			isa = PBXGroup;
+			children = (
+				0C75949421600E3B00D5DA38 /* ExploreEventsViewController.swift */,
+				0C7594A02160123600D5DA38 /* ExploreEventsViewModel.swift */,
+				0C75949521600E3B00D5DA38 /* ExploreEventsViewController.xib */,
+			);
+			path = "Explore Events";
+			sourceTree = "<group>";
+		};
+		0C7594A72160154E00D5DA38 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				0C75949821600E6B00D5DA38 /* ProfileViewController.swift */,
+				0C7594A22160124200D5DA38 /* ProfileViewModel.swift */,
+				0C75949921600E6B00D5DA38 /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		0CA1331421614AED00D02020 /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				0CA1331021614AE000D02020 /* TabBarController.swift */,
+				0CA1331121614AE000D02020 /* TabBarController.xib */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		2473FC926BA0A18958BF2B38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C60AA3599E0DD16B199C3FC4 /* Pods-stagetime-ios.debug.xcconfig */,
+				0920EDFE2FB08E97B4E53FF2 /* Pods-stagetime-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B7C6B98A7EA25697FE0FDDD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0DE1C0C406D77F31BA16A24 /* Pods_stagetime_ios.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C759482215FF02700D5DA38 /* Build configuration list for PBXNativeTarget "stagetime-ios" */;
 			buildPhases = (
+				A0B428FDE57AB177F9B7915A /* [CP] Check Pods Manifest.lock */,
 				0C75946C215FF02500D5DA38 /* Sources */,
 				0C75946D215FF02500D5DA38 /* Frameworks */,
 				0C75946E215FF02500D5DA38 /* Resources */,
+				232D2BECC034809B3A21907D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,35 +272,88 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C75949B21600E6B00D5DA38 /* ProfileViewController.xib in Resources */,
+				0C75949321600E0500D5DA38 /* SocialTimelineViewController.xib in Resources */,
 				0C75947E215FF02700D5DA38 /* LaunchScreen.storyboard in Resources */,
+				0CA1331321614AE000D02020 /* TabBarController.xib in Resources */,
+				0C75948F21600D5700D5DA38 /* PersonalTimelineViewController.xib in Resources */,
 				0C75947B215FF02700D5DA38 /* Assets.xcassets in Resources */,
-				0C759479215FF02500D5DA38 /* Main.storyboard in Resources */,
+				0C75949721600E3B00D5DA38 /* ExploreEventsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		232D2BECC034809B3A21907D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-stagetime-ios/Pods-stagetime-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-stagetime-ios/Pods-stagetime-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0B428FDE57AB177F9B7915A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-stagetime-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0C75946C215FF02500D5DA38 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C759476215FF02500D5DA38 /* ViewController.swift in Sources */,
+				0CA133162161546A00D02020 /* SocialTimelineCoordinator.swift in Sources */,
+				0C75948A215FF51200D5DA38 /* AppCoordinator.swift in Sources */,
+				0C75949D216011F200D5DA38 /* PersonalTimelineViewModel.swift in Sources */,
+				0C7594AB216022BA00D5DA38 /* Coordinator.swift in Sources */,
+				0CA1331221614AE000D02020 /* TabBarController.swift in Sources */,
+				0C75949F2160121E00D5DA38 /* SocialTimelineViewModel.swift in Sources */,
+				0C75949621600E3B00D5DA38 /* ExploreEventsViewController.swift in Sources */,
+				0C75948E21600D5700D5DA38 /* PersonalTimelineViewController.swift in Sources */,
+				0C7594A92160228D00D5DA38 /* PersonalTimelineCoordinator.swift in Sources */,
+				0CA13318216427A200D02020 /* ExploreEventsCoordinator.swift in Sources */,
+				0C7594A12160123600D5DA38 /* ExploreEventsViewModel.swift in Sources */,
 				0C759474215FF02500D5DA38 /* AppDelegate.swift in Sources */,
+				0C7594A32160124200D5DA38 /* ProfileViewModel.swift in Sources */,
+				0CA1330F21607A8400D02020 /* TabBarCoordinator.swift in Sources */,
+				0C75949A21600E6B00D5DA38 /* ProfileViewController.swift in Sources */,
+				0C759487215FF28000D5DA38 /* RootViewController.swift in Sources */,
+				0CA1331A2164281A00D02020 /* ProfileCoordinator.swift in Sources */,
+				0C75949221600E0500D5DA38 /* SocialTimelineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0C759477215FF02500D5DA38 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0C759478215FF02500D5DA38 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0C75947C215FF02700D5DA38 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,11 +483,12 @@
 		};
 		0C759483215FF02700D5DA38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C60AA3599E0DD16B199C3FC4 /* Pods-stagetime-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHUTMRT2ZX;
-				INFOPLIST_FILE = "stagetime-ios/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/stagetime-ios/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +502,12 @@
 		};
 		0C759484215FF02700D5DA38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0920EDFE2FB08E97B4E53FF2 /* Pods-stagetime-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DHUTMRT2ZX;
-				INFOPLIST_FILE = "stagetime-ios/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/stagetime-ios/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
