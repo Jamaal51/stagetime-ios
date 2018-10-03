@@ -43,26 +43,11 @@ class AppCoordinator: Coordinator {
         // else if has account, but not authenticated
 
         // else if has account and authenticated then launch tab bar coordinator
-        //launchPersonalTimeline()
         launchAppDashboard()
     }
 
-    func launchPersonalTimeline() {
-
-        self.rootViewController = appNavigationController
-
-        let personalTimelineCoordinator = PersonalTimelineCoordinator()
-
-        self.childCoordinators.append(personalTimelineCoordinator)
-        
-        personalTimelineCoordinator
-            .start()
-            .subscribe(onNext: { personalTimeVC in
-                if let navigationVC = self.rootViewController as? UINavigationController {
-                    navigationVC.pushViewController(personalTimeVC, animated: true)
-                }
-            }).disposed(by: disposeBag)
-    }
+    func launchOnboardingFlow() {}
+    func launchAuthenticationFlow() {}
 
     func launchAppDashboard() {
 
