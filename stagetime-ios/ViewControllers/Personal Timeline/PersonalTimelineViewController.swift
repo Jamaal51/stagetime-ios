@@ -10,10 +10,18 @@ import UIKit
 
 class PersonalTimelineViewController: UIViewController {
 
+    let viewModel: PersonalTimelineViewModel
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
+    init(viewModel: PersonalTimelineViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: "PersonalTimelineViewController", bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }

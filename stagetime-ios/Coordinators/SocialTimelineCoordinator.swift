@@ -17,7 +17,7 @@ class SocialTimelineCoordinator: Coordinator {
 
     func start() -> Observable<UIViewController> {
 
-        let socialTimelineVC = PersonalTimelineViewController(nibName: "SocialTimelineViewController", bundle: nil)
+        let socialTimelineVC = SocialTimelineViewController(nibName: "SocialTimelineViewController", bundle: nil)
 
         return Observable.create({ (observer) -> Disposable in
             observer.onNext(socialTimelineVC)

@@ -10,13 +10,17 @@ import UIKit
 import RxSwift
 
 class PersonalTimelineCoordinator: Coordinator {
+
     var childCoordinators: [Coordinator] = []
 
     var rootViewController: UIViewController?
 
+    //inject viewModel with app config dependency
+    let personalTimelineVM = PersonalTimelineViewModel()
+
     func start() -> Observable<UIViewController> {
 
-        let personalTimelineVC = PersonalTimelineViewController(nibName: "PersonalTimelineViewController", bundle: nil)
+        let personalTimelineVC = PersonalTimelineViewController(viewModel: personalTimelineVM)
 
         return Observable.create({ (observer) -> Disposable in
             observer.onNext(personalTimelineVC)

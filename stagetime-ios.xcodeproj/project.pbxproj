@@ -32,6 +32,8 @@
 		0CA133162161546A00D02020 /* SocialTimelineCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA133152161546A00D02020 /* SocialTimelineCoordinator.swift */; };
 		0CA13318216427A200D02020 /* ExploreEventsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA13317216427A200D02020 /* ExploreEventsCoordinator.swift */; };
 		0CA1331A2164281A00D02020 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA133192164281A00D02020 /* ProfileCoordinator.swift */; };
+		0CCA956D21644D6D0003C166 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCA956C21644D6D0003C166 /* Event.swift */; };
+		0CCA956F216451200003C166 /* StageEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCA956E216451200003C166 /* StageEvent.swift */; };
 		DE7B69C2F7D495AB41423B3F /* Pods_stagetime_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DE1C0C406D77F31BA16A24 /* Pods_stagetime_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,8 @@
 		0CA133152161546A00D02020 /* SocialTimelineCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialTimelineCoordinator.swift; sourceTree = "<group>"; };
 		0CA13317216427A200D02020 /* ExploreEventsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreEventsCoordinator.swift; sourceTree = "<group>"; };
 		0CA133192164281A00D02020 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		0CCA956C21644D6D0003C166 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		0CCA956E216451200003C166 /* StageEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageEvent.swift; sourceTree = "<group>"; };
 		B0DE1C0C406D77F31BA16A24 /* Pods_stagetime_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_stagetime_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C60AA3599E0DD16B199C3FC4 /* Pods-stagetime-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-stagetime-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-stagetime-ios/Pods-stagetime-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -199,6 +203,8 @@
 		0CCA956B2164474D0003C166 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0CCA956C21644D6D0003C166 /* Event.swift */,
+				0CCA956E216451200003C166 /* StageEvent.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -344,12 +350,14 @@
 				0C7594AB216022BA00D5DA38 /* Coordinator.swift in Sources */,
 				0CA1331221614AE000D02020 /* TabBarController.swift in Sources */,
 				0C75949F2160121E00D5DA38 /* SocialTimelineViewModel.swift in Sources */,
+				0CCA956D21644D6D0003C166 /* Event.swift in Sources */,
 				0C75949621600E3B00D5DA38 /* ExploreEventsViewController.swift in Sources */,
 				0C75948E21600D5700D5DA38 /* PersonalTimelineViewController.swift in Sources */,
 				0C7594A92160228D00D5DA38 /* PersonalTimelineCoordinator.swift in Sources */,
 				0CA13318216427A200D02020 /* ExploreEventsCoordinator.swift in Sources */,
 				0C7594A12160123600D5DA38 /* ExploreEventsViewModel.swift in Sources */,
 				0C759474215FF02500D5DA38 /* AppDelegate.swift in Sources */,
+				0CCA956F216451200003C166 /* StageEvent.swift in Sources */,
 				0C7594A32160124200D5DA38 /* ProfileViewModel.swift in Sources */,
 				0CA1330F21607A8400D02020 /* TabBarCoordinator.swift in Sources */,
 				0C75949A21600E6B00D5DA38 /* ProfileViewController.swift in Sources */,
